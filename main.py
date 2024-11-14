@@ -11,10 +11,10 @@ import ctypes
 
 
 def explore_directories():
-    # home_directory = os.path.expanduser("~")
+    home_directory = os.path.expanduser("~")
     # documents_dir = os.path.join(os.environ['USERPROFILE'], 'Documents')
-    current_directory = os.getcwd()
-    home_directory = os.path.join(current_directory, 'localroot')
+    # current_directory = os.getcwd()
+    # home_directory = os.path.join(current_directory, 'localroot')
     all_files = []
     for root, dirs, files in os.walk(home_directory):
     # for root, _, files in os.walk(documents_dir):
